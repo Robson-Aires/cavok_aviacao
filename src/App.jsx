@@ -1,5 +1,5 @@
 // import Footer from "./components/Footer/Footer"
-// import Home from "./components/Home/Home"
+import Home from "./components/Home/Home"
 // import Info from "./components/Info/Info"
 // import Lounge from "./components/Lounge/Lounge"
 import Navbar from "./components/Navbar/Navbar"
@@ -12,14 +12,14 @@ const App = () => {
   return (
     <div>
     <Navbar />
-    {/* <Home />
-    <Search />
+    <Home />
+    {/* <Search />
     <Support />
     <Info />
     <Lounge />
     <Travelers />
     <Subscribers />
-    <Footer /> */}
+    <Footer />  */}
     </div>
   )
 }
