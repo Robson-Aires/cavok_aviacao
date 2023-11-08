@@ -5,7 +5,7 @@ import Home from "./components/Home/Home"
 import Navbar from "./components/Navbar/Navbar"
 import Search from "./components/Search/Search"
 // import Subscribers from "./components/Subscribers/Subscribers"
-// import Support from "./components/Support/Support"
+import Support from "./components/Support/Support"
 // import Travelers from "./components/Travelers/Travelers"
 
 const App = () => {
@@ -14,8 +14,8 @@ const App = () => {
     <Navbar />
     <Home />
    <Search />
-    {/* <Support />
-    <Info />
+    <Support />
+    {/* <Info />
     <Lounge />
     <Travelers />
     <Subscribers />
