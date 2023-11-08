@@ -3,13 +3,11 @@ import { SiConsul } from 'react-icons/si'
 import { BsPhoneVibrate } from 'react-icons/bs'
 import { AiOutlineGlobal } from 'react-icons/ai'
 import { CgMenuGridO } from 'react-icons/cg'
-
 import logo from '../../assets/logo.webp'
 
 const Navbar = () => {
 
-  const [active, setActive] = useState('navBarMenu');
-
+const [active, setActive] = useState('navBarMenu');
 const showNavBar = () => {
   setActive('navBarMenu showNavBar')
 }
@@ -17,6 +15,19 @@ const showNavBar = () => {
 const removeNavBar = () => {
   setActive('navBarMenu')
 }
+
+// let us add a background color to the second navbar ==>
+const [noBg, addBg] = useState('navBarTwo');
+const addBgColor = () => {
+  if(window.scrollY >= 10){
+    addBg('navBarTwo navbar_With_Bg')
+  } else {
+    addBg('navBarTwo')
+  }
+}
+
+window.addEventListener('scroll', addBgColor)
+
 
   return (
 <div className="navBar flex">
@@ -38,7 +49,7 @@ const removeNavBar = () => {
 
   </div>
 
-  <div className="navBarTwo flex">
+  <div className={noBg}>
     <div className="logoDiv">
       <img src={ logo } className='logo' />
     </div>
