@@ -6,7 +6,7 @@ import Navbar from "./components/Navbar/Navbar"
 import Search from "./components/Search/Search"
 // import Subscribers from "./components/Subscribers/Subscribers"
 import Support from "./components/Support/Support"
-// import Travelers from "./components/Travelers/Travelers"
+import Travelers from "./components/Travelers/Travelers"
 
 const App = () => {
   return (
@@ -17,8 +17,8 @@ const App = () => {
     <Support />
     <Info />
     <Lounge />
-    {/* <Travelers />
-    <Subscribers />
+    <Travelers />
+    {/* <Subscribers />
     <Footer />   */}
     </div>
   )
