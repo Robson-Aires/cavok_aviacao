@@ -4,7 +4,7 @@ import Info from "./components/Info/Info"
 import Lounge from "./components/Lounge/Lounge"
 import Navbar from "./components/Navbar/Navbar"
 import Search from "./components/Search/Search"
-// import Subscribers from "./components/Subscribers/Subscribers"
+import Subscribers from "./components/Subscribers/Subscribers"
 import Support from "./components/Support/Support"
 import Travelers from "./components/Travelers/Travelers"
 
@@ -18,8 +18,8 @@ const App = () => {
     <Info />
     <Lounge />
     <Travelers />
-    {/* <Subscribers />
-    <Footer />   */}
+     <Subscribers />
+    {/* <Footer />    */}
     </div>
   )
 }
