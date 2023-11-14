@@ -1,4 +1,4 @@
-// import Footer from "./components/Footer/Footer"
+import Footer from "./components/Footer/Footer"
 import Home from "./components/Home/Home"
 import Info from "./components/Info/Info"
 import Lounge from "./components/Lounge/Lounge"
@@ -18,8 +18,8 @@ const App = () => {
     <Info />
     <Lounge />
     <Travelers />
-     <Subscribers />
-    {/* <Footer />    */}
+    <Subscribers />
+    <Footer />
     </div>
   )
 }
