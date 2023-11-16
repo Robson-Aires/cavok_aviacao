@@ -2,11 +2,18 @@ import Logo from '../../assets/logo.webp';
 import {TiSocialFacebook} from 'react-icons/ti';
 import {AiOutlineTwitter} from 'react-icons/ai';
 import {AiFillYoutube} from 'react-icons/ai';
+import { useEffect } from 'react'
+import Aos from 'aos'
+import 'aos/dist/aos.css';
+
 
 
 const Footer = () => {
+  useEffect(()=>{
+    Aos.init({duration: 2000})
+  }, [])
   return (
-    <div className="footer">
+    <div data-aos='fade-up' data-aos-duration='3500' className="footer">
       <div className="sectionContainer container grid">
         <div className="gridOne">
           <div className="logoDiv">
@@ -14,10 +21,16 @@ const Footer = () => {
           </div>
           <p>Your mind should be strong than your feelings, fly!</p>
           <div className="socialIcon flex">
-            <TiSocialFacebook className='icon' />
-            <AiOutlineTwitter className='icon' />
-            <AiFillYoutube className='icon' />
-          </div>
+              <a href="https://pt-br.facebook.com/cavok.in/" target="_blank" rel="noopener noreferrer">
+                <TiSocialFacebook className='icon' />
+              </a>
+              <a href="https://pt-br.facebook.com/cavok.in/" target="_blank" rel="noopener noreferrer">
+                <AiOutlineTwitter className='icon' />
+              </a>
+              <a href="https://www.youtube.com/@cavokaviacao7770" target="_blank" rel="noopener noreferrer">
+                <AiFillYoutube className='icon' />
+              </a>
+            </div>
         </div>
 
         <div className="footerLinks">
@@ -89,8 +102,8 @@ const Footer = () => {
       </div>
       
       <div className="copyRightDiv flex">
-        <p>Courtesy Design | Developer by <a href="">I
-        sraTech</a></p>
+        <p>Courtesy Design | Developer by <a href="https://robson-aires.github.io/site-portfolio/#home">I
+        robson aires</a></p>
       </div>
     </div>
   )

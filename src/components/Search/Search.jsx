@@ -1,41 +1,47 @@
 import { HiOutlineLocationMarker } from "react-icons/hi";
 import { RiAccountPinCircleLine } from "react-icons/ri"
 import { RxCalendar } from "react-icons/rx"
-
+import { useEffect } from 'react'
+import Aos from 'aos'
+import 'aos/dist/aos.css';
 
 
 const Search = () => {
+  useEffect(()=>{
+    Aos.init({duration: 2000})
+  }, [])
+
   return (
     <div className="search container section">
-      <div className="sectionContainer grid">
+      <div data-aos='fade-up' data-aos-duration='2500'className="sectionContainer grid">
 
 
         <div className="btns flex">
           <div className="singleBtn">
-            <span>Economy</span>
+            <span>ROTA / NAVEGAÇÃO</span>
           </div>
 
 
           <div className="singleBtn">
-            <span>Business Class</span>
+            <span>METAR/TAF</span>
           </div>
 
 
           <div className="singleBtn">
-            <span>First Class</span>
+            <span>NOTAM</span>
           </div>
 
         </div>
 
-        <div className="searchInputs flex">
+        <div data-aos='fade-up' data-aos-duration='2000' className="searchInputs flex">
           {/* single input */}
           <div className="singleInput flex">
             <div className="iconDiv">
               <HiOutlineLocationMarker className="icon" />
             </div>
             <div className="texts">
-              <h4>Location</h4>
-              <input type="text" placeholder="where do you want to go" />
+              <h4>Consultar Aeródromos</h4>
+              <input type="text" placeholder="Consultar Aeródromos" />
             </div>
           </div>
 
@@ -45,8 +51,8 @@ const Search = () => {
               <RiAccountPinCircleLine className="icon" />
             </div>
             <div className="texts">
-              <h4>Travelers</h4>
-              <input type="text" placeholder="where do you want to go" />
+              <h4>Licenças e Habilitações</h4>
+              <input type="text" placeholder="Licenças e Habilitações" />
             </div>
           </div>
 
@@ -56,8 +62,8 @@ const Search = () => {
               <RxCalendar className="icon" />
             </div>
             <div className="texts">
-              <h4>Check In</h4>
-              <input type="text" placeholder="Add date" />
+              <h4>Consultar RAB</h4>
+              <input type="text" placeholder="Consultar RAB" />
             </div>
           </div>
 
@@ -67,12 +73,12 @@ const Search = () => {
               <RxCalendar className="icon" />
             </div>
             <div className="texts">
-              <h4>Check Out</h4>
-              <input type="text" placeholder="Add date" />
+              <h4>Rota / Navegação</h4>
+              <input type="text" placeholder="Rota" />
             </div>
           </div>
 
-          <button className="btn btnBlock flex">Search Flight</button>
+          <button className="btn btnBlock flex">Pesquisar</button>
         </div>
 
       </div>
